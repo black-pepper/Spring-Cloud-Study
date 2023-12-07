@@ -20,5 +20,5 @@ public class UserEntity {
     private String userId;
 
     @Column(nullable = false, unique = true)
-    private String encrytedPwd;
+    private String encryptedPwd;
 }
