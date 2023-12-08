@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   profiles:
     active: native #native or git
   cloud:
@@ -16,3 +21,9 @@ spring:
           username: black-pepper
           password: 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
 #          uri: file:///C:\Users\magna\Desktop\study\Spring-Cloud-Study
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
