@@ -10,10 +10,5 @@
         <module name="apigateway-service.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="스프링 클라우드.discoveryservice" target="17" />
-      <module name="스프링 클라우드.discoveryservice.main" target="17" />
-      <module name="스프링 클라우드.discoveryservice.test" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
