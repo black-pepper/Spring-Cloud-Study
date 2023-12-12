@@ -2,6 +2,9 @@ server:
   port: 8888
 
 spring:
+  config:
+    import:
+      - classpath:/bootstrap.yml
   application:
     name: config-service
   rabbitmq:
@@ -27,3 +30,6 @@ management:
     web:
       exposure:
         include: health, busrefresh
+
+#encrypt:
+#  key: Y2hvcHBhLWRvbnQtYml0ZS1tZS1zcHJpbmctYm9vdC1qd3QtdGVzdC1zZWNyZXQta2V5LWNob3BwYS1kb250LWJpdGUtbWUtc3ByaW5nLWJvb3Qtand0LXRlc3Qtc2VjcmV0LWtleQo=

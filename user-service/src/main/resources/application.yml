@@ -9,9 +9,9 @@ spring:
     port: 5672
     username: guest
     password: guest
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: sa
   jpa:
     hibernate:
       ddl-auto: create-drop # 시작할 때 새로 생성 하고 세션을 마칠 때 스키마를 소멸 시킵니다.
