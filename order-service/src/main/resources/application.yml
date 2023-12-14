@@ -10,16 +10,21 @@ spring:
       settings:
         web-allow-others: true
       path: /h2-console
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb
-    username: sa
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
   jpa:
     hibernate:
-      ddl-auto: create-drop
+#      ddl-auto: create-drop
+      ddl-auto: none
   sql:
     init:
       mode: always
+  datasource:
+    url: jdbc:mysql://54.180.96.26:53245/mydb?serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: asdqwe123!
 
 eureka:
   instance:
