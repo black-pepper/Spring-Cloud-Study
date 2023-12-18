@@ -17,14 +17,19 @@ spring:
   jpa:
     hibernate:
 #      ddl-auto: create-drop
-      ddl-auto: none
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
   sql:
     init:
       mode: always
+#  datasource:
+#    url: jdbc:mysql://54.180.96.26:53245/mydb?serverTimezone=UTC&useLegacyDatetimeCode=false
+#    username: root
+#    password: asdqwe123!
   datasource:
-    url: jdbc:mysql://54.180.96.26:53245/mydb?serverTimezone=UTC&useLegacyDatetimeCode=false
+    url: jdbc:mysql://localhost:3307/test
     username: root
-    password: asdqwe123!
+    password: 1234
 
 eureka:
   instance:

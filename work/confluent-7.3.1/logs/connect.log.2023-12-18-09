@@ -1,0 +1,1872 @@
+[2023-12-18 09:57:42,088] INFO WorkerInfo values: 
+	jvm.args = -Xmx256M, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1/logs, -Dlog4j.configuration=file:C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1/etc/kafka/connect-log4j.properties
+	jvm.spec = Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 17.0.9, 17.0.9+11-LTS-201
+	jvm.classpath = %classpath%;.;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\activation-1.1.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\aopalliance-repackaged-2.6.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\argparse4j-0.7.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\audience-annotations-0.5.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\commons-cli-1.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\commons-lang3-3.12.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\commons-lang3-3.8.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-api-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-basic-auth-extension-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-json-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-mirror-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-mirror-client-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-runtime-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\connect-transforms-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\hk2-api-2.6.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\hk2-locator-2.6.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\hk2-utils-2.6.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-annotations-2.13.3.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-core-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-databind-2.13.4.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-dataformat-csv-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-datatype-jdk8-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-jaxrs-base-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-jaxrs-json-provider-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-module-jaxb-annotations-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jackson-module-scala_2.13-2.13.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.activation-api-1.2.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.annotation-api-1.3.5.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.inject-2.6.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.validation-api-2.0.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.ws.rs-api-2.1.6.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jakarta.xml.bind-api-2.3.3.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\javassist-3.27.0-GA.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\javax.servlet-api-3.1.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\javax.ws.rs-api-2.1.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jaxb-api-2.3.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-client-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-common-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-container-servlet-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-container-servlet-core-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-hk2-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jersey-server-2.34.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-client-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-continuation-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-http-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-io-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-security-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-server-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-servlet-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-servlets-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-util-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jetty-util-ajax-9.4.48.v20220622.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jline-3.21.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jopt-simple-5.0.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\jose4j-0.7.9.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-clients-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-log4j-appender-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-metadata-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-raft-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-server-common-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-shell-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-storage-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-storage-api-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-streams-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-streams-examples-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-streams-scala_2.13-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-streams-test-utils-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka-tools-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\kafka_2.13-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\lz4-java-1.8.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\mariadb-java-client-2.7.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\mariadb-java-client-3.1.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\maven-artifact-3.8.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\metrics-core-2.2.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\metrics-core-4.1.12.1.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\mysql-connector-java-8.0.29.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-buffer-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-codec-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-common-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-handler-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-resolver-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-transport-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-transport-native-epoll-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\osgi-resource-locator-1.0.3.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\paranamer-2.8.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\plexus-utils-3.3.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\reflections-0.9.12.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\reload4j-1.2.19.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\rocksdbjni-7.1.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\scala-collection-compat_2.13-2.6.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\scala-java8-compat_2.13-1.0.2.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\scala-library-2.13.10.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\scala-logging_2.13-3.9.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\scala-reflect-2.13.10.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\slf4j-api-1.7.36.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\slf4j-reload4j-1.7.36.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\snappy-java-1.1.8.4.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\swagger-annotations-2.2.0.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\trogdor-7.3.1-ccs.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\zookeeper-3.6.3.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\zookeeper-jute-3.6.3.jar;C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluent-7.3.1\share\java\kafka\zstd-jni-1.5.2-1.jar
+	os.spec = Windows 10, amd64, 10.0
+	os.vcpus = 40
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2023-12-18 09:57:42,102] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.ConnectDistributed:92)
+[2023-12-18 09:57:42,123] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\checker-qual-3.5.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,251] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/checker-qual-3.5.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:42,251] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:42,253] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:42,254] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:42,266] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\common-utils-6.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,274] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/common-utils-6.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:42,277] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\jtds-1.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,323] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/jtds-1.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:42,327] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\kafka-connect-jdbc-10.6.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,362] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/kafka-connect-jdbc-10.6.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:42,362] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:42,363] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:42,366] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\mssql-jdbc-8.4.1.jre8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,598] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/mssql-jdbc-8.4.1.jre8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:42,641] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\ojdbc8-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:42,958] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/ojdbc8-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,003] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\ons-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,022] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/ons-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,025] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\oraclepki-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,053] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/oraclepki-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,055] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\orai18n-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,070] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/orai18n-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,072] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\osdt_cert-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,091] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/osdt_cert-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,093] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\osdt_core-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,121] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/osdt_core-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,123] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\postgresql-42.4.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,198] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/postgresql-42.4.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,203] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\simplefan-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,210] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/simplefan-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,212] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\slf4j-api-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,220] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/slf4j-api-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,222] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\sqlite-jdbc-3.25.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,241] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/sqlite-jdbc-3.25.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,246] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\ucp-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,361] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/ucp-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,363] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\xdb-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,382] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/xdb-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:43,384] INFO Loading plugin from: C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib\xmlparserv2-19.7.0.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2023-12-18 09:57:43,507] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/magna/Desktop/study/Spring-Cloud-Study/work/confluentinc-kafka-connect-jdbc-10.6.3/lib/xmlparserv2-19.7.0.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:44,725] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2b193f2d (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2023-12-18 09:57:44,725] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,727] INFO Added plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,727] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,728] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,729] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,730] INFO Added plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,730] INFO Added plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,731] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,731] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,732] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,733] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,733] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,734] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,734] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,736] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,736] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,737] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,738] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,742] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,742] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,743] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,744] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,744] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,745] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,746] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,746] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,747] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,747] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,748] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,749] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,749] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,750] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,751] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,751] INFO Added plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,753] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,753] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,754] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,757] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,758] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,759] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,760] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,760] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,761] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,761] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,762] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,763] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,763] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,764] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,764] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,765] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2023-12-18 09:57:44,768] INFO Added aliases 'JdbcSinkConnector' and 'JdbcSink' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,768] INFO Added aliases 'JdbcSourceConnector' and 'JdbcSource' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,769] INFO Added aliases 'MirrorCheckpointConnector' and 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,769] INFO Added aliases 'MirrorHeartbeatConnector' and 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,772] INFO Added aliases 'MirrorSourceConnector' and 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,773] INFO Added aliases 'MockSinkConnector' and 'MockSink' to plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,774] INFO Added aliases 'MockSourceConnector' and 'MockSource' to plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,774] INFO Added aliases 'SchemaSourceConnector' and 'SchemaSource' to plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,775] INFO Added aliases 'VerifiableSinkConnector' and 'VerifiableSink' to plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,775] INFO Added aliases 'VerifiableSourceConnector' and 'VerifiableSource' to plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,776] INFO Added aliases 'ByteArrayConverter' and 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,777] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,777] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,778] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,778] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,779] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,779] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,780] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,781] INFO Added aliases 'ByteArrayConverter' and 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,781] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,782] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,782] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,783] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,783] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,784] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,786] INFO Added aliases 'SimpleHeaderConverter' and 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,789] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,790] INFO Added aliases 'PredicatedTransformation' and 'Predicated' to plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,791] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,792] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,793] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,793] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,794] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,795] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,795] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,796] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,796] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,797] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2023-12-18 09:57:44,798] INFO Added aliases 'AllConnectorClientConfigOverridePolicy' and 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,798] INFO Added aliases 'NoneConnectorClientConfigOverridePolicy' and 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,799] INFO Added aliases 'PrincipalConnectorClientConfigOverridePolicy' and 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2023-12-18 09:57:44,855] INFO DistributedConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	config.providers = []
+	config.storage.replication.factor = 1
+	config.storage.topic = connect-configs
+	connect.protocol = sessioned
+	connections.max.idle.ms = 540000
+	connector.client.config.override.policy = All
+	exactly.once.source.support = disabled
+	group.id = connect-cluster
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	heartbeat.interval.ms = 3000
+	inter.worker.key.generation.algorithm = HmacSHA256
+	inter.worker.key.size = null
+	inter.worker.key.ttl.ms = 3600000
+	inter.worker.signature.algorithm = HmacSHA256
+	inter.worker.verification.algorithms = [HmacSHA256]
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.partitions = 25
+	offset.storage.replication.factor = 1
+	offset.storage.topic = connect-offsets
+	plugin.path = [C:\Users\magna\Desktop\study\Spring-Cloud-Study\work\confluentinc-kafka-connect-jdbc-10.6.3\lib]
+	rebalance.timeout.ms = 60000
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	scheduled.rebalance.max.delay.ms = 300000
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	status.storage.partitions = 5
+	status.storage.replication.factor = 1
+	status.storage.topic = connect-status
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+	worker.sync.timeout.ms = 3000
+	worker.unsync.backoff.ms = 300000
+ (org.apache.kafka.connect.runtime.distributed.DistributedConfig:376)
+[2023-12-18 09:57:44,858] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:44,864] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:44,988] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:44,989] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:44,990] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:44,992] INFO Kafka startTimeMs: 1702861064989 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,438] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,438] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,445] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,445] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,446] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,460] INFO Logging initialized @4212ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2023-12-18 09:57:45,510] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:120)
+[2023-12-18 09:57:45,510] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:191)
+[2023-12-18 09:57:45,520] INFO jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 17.0.9+11-LTS-201 (org.eclipse.jetty.server.Server:375)
+[2023-12-18 09:57:45,567] INFO Started http_8083@7a5b769b{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2023-12-18 09:57:45,568] INFO Started @4319ms (org.eclipse.jetty.server.Server:415)
+[2023-12-18 09:57:45,591] INFO Advertised URI: http://192.168.0.50:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2023-12-18 09:57:45,592] INFO REST server listening at http://192.168.0.50:8083/, advertising URL http://192.168.0.50:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:206)
+[2023-12-18 09:57:45,592] INFO Advertised URI: http://192.168.0.50:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2023-12-18 09:57:45,593] INFO REST admin endpoints at http://192.168.0.50:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:207)
+[2023-12-18 09:57:45,593] INFO Advertised URI: http://192.168.0.50:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2023-12-18 09:57:45,598] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,598] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,605] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,605] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,606] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,606] INFO Kafka startTimeMs: 1702861065605 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,615] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,616] INFO App info kafka.admin.client for adminclient-2 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,618] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,619] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,619] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,626] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2023-12-18 09:57:45,632] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,633] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,638] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,639] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,639] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,640] INFO Kafka startTimeMs: 1702861065639 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,648] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,648] INFO App info kafka.admin.client for adminclient-3 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,650] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,650] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,651] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,655] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,655] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,656] INFO Kafka startTimeMs: 1702861065655 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,809] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2023-12-18 09:57:45,812] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2023-12-18 09:57:45,812] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,813] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,820] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,820] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,821] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,821] INFO Kafka startTimeMs: 1702861065820 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,829] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,830] INFO App info kafka.admin.client for adminclient-4 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,831] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,832] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,832] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,840] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,841] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,845] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,846] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,846] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,847] INFO Kafka startTimeMs: 1702861065846 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,854] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,854] INFO App info kafka.admin.client for adminclient-5 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,855] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,856] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,856] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,862] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,862] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,867] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,870] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,870] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,872] INFO Kafka startTimeMs: 1702861065869 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,878] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,879] INFO App info kafka.admin.client for adminclient-6 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,880] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,880] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,881] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,882] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,884] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,889] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,890] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,890] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,891] INFO Kafka startTimeMs: 1702861065890 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,898] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,902] INFO App info kafka.admin.client for adminclient-7 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,903] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,904] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,904] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,906] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,906] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,910] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,910] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,911] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,912] INFO Kafka startTimeMs: 1702861065910 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,918] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,919] INFO App info kafka.admin.client for adminclient-8 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,920] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,921] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,921] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,937] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2023-12-18 09:57:45,937] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,941] WARN These configurations '[config.storage.topic, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,941] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,944] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,945] INFO Kafka startTimeMs: 1702861065941 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,956] INFO Kafka cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2023-12-18 09:57:45,956] INFO App info kafka.admin.client for adminclient-9 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-18 09:57:45,957] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-18 09:57:45,958] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-18 09:57:45,958] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-18 09:57:45,982] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:45,982] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:45,983] INFO Kafka startTimeMs: 1702861065982 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:45,987] INFO Kafka Connect distributed worker initialization took 3885ms (org.apache.kafka.connect.cli.ConnectDistributed:138)
+[2023-12-18 09:57:45,988] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:50)
+[2023-12-18 09:57:45,990] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:211)
+[2023-12-18 09:57:45,990] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder starting (org.apache.kafka.connect.runtime.distributed.DistributedHerder:338)
+[2023-12-18 09:57:45,991] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:203)
+[2023-12-18 09:57:45,991] INFO Starting KafkaOffsetBackingStore (org.apache.kafka.connect.storage.KafkaOffsetBackingStore:253)
+[2023-12-18 09:57:45,993] INFO Starting KafkaBasedLog with topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:224)
+[2023-12-18 09:57:45,994] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2023-12-18 09:57:45,999] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2023-12-18 09:57:45,999] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,000] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,000] INFO Kafka startTimeMs: 1702861065999 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,034] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:376)
+[2023-12-18 09:57:46,038] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:230)
+[2023-12-18 09:57:46,052] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:385)
+[2023-12-18 09:57:46,052] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,053] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,053] INFO Kafka startTimeMs: 1702861066052 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,060] INFO [Producer clientId=producer-1] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,063] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:376)
+[2023-12-18 09:57:46,095] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:385)
+[2023-12-18 09:57:46,098] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,098] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,099] INFO Kafka startTimeMs: 1702861066098 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,114] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,119] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Assigned to partition(s): connect-offsets-0, connect-offsets-5, connect-offsets-10, connect-offsets-20, connect-offsets-15, connect-offsets-9, connect-offsets-11, connect-offsets-4, connect-offsets-16, connect-offsets-17, connect-offsets-3, connect-offsets-24, connect-offsets-23, connect-offsets-13, connect-offsets-18, connect-offsets-22, connect-offsets-8, connect-offsets-2, connect-offsets-12, connect-offsets-19, connect-offsets-14, connect-offsets-1, connect-offsets-6, connect-offsets-7, connect-offsets-21 (org.apache.kafka.clients.consumer.KafkaConsumer:1128)
+[2023-12-18 09:57:46,123] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,124] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-5 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,125] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-10 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,125] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-20 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,126] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-15 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,126] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-9 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,126] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2023-12-18 09:57:46,127] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-11 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,127] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2023-12-18 09:57:46,128] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-4 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,129] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-16 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,129] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-17 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,129] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session:132)
+[2023-12-18 09:57:46,130] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-3 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,131] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-24 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,132] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-23 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,132] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-13 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,133] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-18 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,133] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-22 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,134] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-8 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,134] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-2 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,135] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-12 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,135] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-19 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,137] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-14 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,140] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-1 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,141] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-6 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,142] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-7 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,142] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to earliest offset of partition connect-offsets-21 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,166] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-0 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,167] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-5 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,167] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-10 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,168] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-20 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,170] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-15 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,170] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-9 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,171] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-11 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,172] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-4 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,172] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-16 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,173] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-17 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,173] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-3 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,174] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-24 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,175] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-23 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,175] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-13 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,176] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-18 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,176] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-22 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,177] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-8 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,177] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-2 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,178] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-12 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,179] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-19 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,179] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-14 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,180] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-1 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,180] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-6 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,181] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-7 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,181] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-21 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,192] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,193] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,193] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-14 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,194] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-12 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,195] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,195] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,196] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,196] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,197] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-24 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,197] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-18 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,198] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-16 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,199] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-22 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,199] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-20 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,200] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,203] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,205] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,205] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,206] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,207] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,208] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,209] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-23 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,209] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,210] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,210] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-21 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,211] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-19 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,212] INFO Finished reading KafkaBasedLog for topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:273)
+[2023-12-18 09:57:46,212] INFO Started KafkaBasedLog for topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:275)
+[2023-12-18 09:57:46,213] INFO Finished reading offsets topic and starting KafkaOffsetBackingStore (org.apache.kafka.connect.storage.KafkaOffsetBackingStore:270)
+[2023-12-18 09:57:46,215] INFO Worker started (org.apache.kafka.connect.runtime.Worker:213)
+[2023-12-18 09:57:46,218] INFO Starting KafkaBasedLog with topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:224)
+[2023-12-18 09:57:46,225] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:376)
+[2023-12-18 09:57:46,231] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:385)
+[2023-12-18 09:57:46,235] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,236] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,237] INFO Kafka startTimeMs: 1702861066235 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,238] INFO [Producer clientId=producer-2] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,238] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:376)
+[2023-12-18 09:57:46,244] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:385)
+[2023-12-18 09:57:46,245] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,245] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,246] INFO Kafka startTimeMs: 1702861066245 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,254] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,255] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Assigned to partition(s): connect-status-0, connect-status-4, connect-status-1, connect-status-2, connect-status-3 (org.apache.kafka.clients.consumer.KafkaConsumer:1128)
+[2023-12-18 09:57:46,255] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to earliest offset of partition connect-status-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,256] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to earliest offset of partition connect-status-4 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,256] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to earliest offset of partition connect-status-1 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,257] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to earliest offset of partition connect-status-2 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,257] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to earliest offset of partition connect-status-3 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,263] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-0 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,264] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-4 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,264] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-1 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,265] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-2 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,266] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-3 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,268] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,268] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,269] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,269] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,270] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,271] INFO Finished reading KafkaBasedLog for topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:273)
+[2023-12-18 09:57:46,271] INFO Started KafkaBasedLog for topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:275)
+[2023-12-18 09:57:46,275] INFO Starting KafkaConfigBackingStore (org.apache.kafka.connect.storage.KafkaConfigBackingStore:327)
+[2023-12-18 09:57:46,275] INFO Starting KafkaBasedLog with topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:224)
+[2023-12-18 09:57:46,282] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:376)
+[2023-12-18 09:57:46,287] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, group.id, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:385)
+[2023-12-18 09:57:46,288] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,288] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,289] INFO Kafka startTimeMs: 1702861066288 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,290] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:376)
+[2023-12-18 09:57:46,291] INFO [Producer clientId=producer-3] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,296] WARN These configurations '[config.storage.topic, metrics.context.connect.group.id, status.storage.topic, plugin.path, config.storage.replication.factor, offset.flush.interval.ms, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:385)
+[2023-12-18 09:57:46,296] INFO Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-18 09:57:46,296] INFO Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-18 09:57:46,297] INFO Kafka startTimeMs: 1702861066296 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-18 09:57:46,301] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,302] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Assigned to partition(s): connect-configs-0 (org.apache.kafka.clients.consumer.KafkaConsumer:1128)
+[2023-12-18 09:57:46,302] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Seeking to earliest offset of partition connect-configs-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:642)
+[2023-12-18 09:57:46,307] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Resetting the last seen epoch of partition connect-configs-0 to 0 since the associated topicId changed from null to IbF5gmv6SZyD2XmabuXxFw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,309] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Resetting offset for partition connect-configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-18 09:57:46,359] INFO Finished reading KafkaBasedLog for topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:273)
+[2023-12-18 09:57:46,359] INFO Started KafkaBasedLog for topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:275)
+[2023-12-18 09:57:46,360] INFO Started KafkaConfigBackingStore (org.apache.kafka.connect.storage.KafkaConfigBackingStore:351)
+[2023-12-18 09:57:46,361] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder started (org.apache.kafka.connect.runtime.distributed.DistributedHerder:343)
+[2023-12-18 09:57:46,368] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-configs-0 to 0 since the associated topicId changed from null to IbF5gmv6SZyD2XmabuXxFw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,369] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-0 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,369] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-4 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,370] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-1 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,370] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-2 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,371] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-status-3 to 0 since the associated topicId changed from null to _oIidf5WTcyncK2ZVA9Xjw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,371] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-0 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,372] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-5 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,372] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-10 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,373] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-20 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,374] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-15 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,374] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-9 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,375] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-11 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,375] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-4 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,376] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-16 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,376] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-17 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,377] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-3 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,378] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-24 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,378] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-23 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,379] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-13 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,379] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-18 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,380] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-22 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,380] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-8 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,381] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-2 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,381] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-12 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,382] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-19 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,383] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-14 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,387] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-1 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,387] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-6 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,388] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-7 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,389] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition connect-offsets-21 to 0 since the associated topicId changed from null to BfkqxREJQQ2P9TY4Gl3Kvg (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,389] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition quickstart-events-0 to 0 since the associated topicId changed from null to 6VYJypObRPqYYEiPMy_UDw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,390] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-0 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,390] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-10 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,391] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-20 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,392] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-40 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,392] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-30 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,393] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-9 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,393] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-39 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,394] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-11 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,394] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-31 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,395] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-13 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,395] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-18 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,396] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-22 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,397] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-8 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,397] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-32 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,398] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-43 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,398] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-29 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,399] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-34 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,403] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-1 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,403] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-6 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,404] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-41 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,405] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-27 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,405] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-48 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,406] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-5 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,406] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-15 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,407] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-35 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,408] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-25 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,408] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-46 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,409] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-26 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,409] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-36 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,410] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-44 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,410] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-16 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,411] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-37 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,411] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-17 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,412] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-45 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,413] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-3 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,413] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-4 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,417] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-24 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,418] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-38 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,420] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-33 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,420] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-23 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,421] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-28 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,421] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-2 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,422] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-12 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,423] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-19 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,423] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-14 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,424] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-47 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,424] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-49 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,425] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-42 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,425] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-7 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,426] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition __consumer_offsets-21 to 0 since the associated topicId changed from null to x5DYZxzFR_yMt85evRbliQ (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,426] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting the last seen epoch of partition hoony-kafka-test-0 to 0 since the associated topicId changed from null to jiCCutthSRmMo4_NzwFxGw (org.apache.kafka.clients.Metadata:402)
+[2023-12-18 09:57:46,428] INFO [Worker clientId=connect-1, groupId=connect-cluster] Cluster ID: RAGZoIhVTsO7n4moHNR-bw (org.apache.kafka.clients.Metadata:287)
+[2023-12-18 09:57:46,429] INFO [Worker clientId=connect-1, groupId=connect-cluster] Discovered group coordinator DESKTOP-2BQSN3N:9092 (id: 2147483647 rack: null) (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:897)
+[2023-12-18 09:57:46,434] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:229)
+[2023-12-18 09:57:46,434] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:566)
+[2023-12-18 09:57:46,444] INFO [Worker clientId=connect-1, groupId=connect-cluster] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException) (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:1063)
+[2023-12-18 09:57:46,444] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:566)
+[2023-12-18 09:57:46,719] INFO Started o.e.j.s.ServletContextHandler@25aeb5ac{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2023-12-18 09:57:46,719] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:312)
+[2023-12-18 09:57:46,720] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:56)
+[2023-12-18 09:57:47,306] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation Generation{generationId=4, memberId='connect-1-5fe3efe7-8e24-423d-b70b-71765d4edb5e', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:627)
+[2023-12-18 09:57:47,326] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully synced group in generation Generation{generationId=4, memberId='connect-1-5fe3efe7-8e24-423d-b70b-71765d4edb5e', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:802)
+[2023-12-18 09:57:47,326] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 4 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-5fe3efe7-8e24-423d-b70b-71765d4edb5e', leaderUrl='http://192.168.0.50:8083/', offset=2, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2256)
+[2023-12-18 09:57:47,327] WARN [Worker clientId=connect-1, groupId=connect-cluster] Catching up to assignment's config offset. (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1519)
+[2023-12-18 09:57:47,327] INFO [Worker clientId=connect-1, groupId=connect-cluster] Current config state offset -1 is behind group assignment 2, reading to end of config log (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1584)
+[2023-12-18 09:57:47,330] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished reading to end of log and updated config snapshot, new config log offset: 2 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1609)
+[2023-12-18 09:57:47,330] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 2 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1659)
+[2023-12-18 09:57:47,331] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1687)
