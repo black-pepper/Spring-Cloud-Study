@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/benchmarks/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/benchmarks/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/activemq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/activemq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/rabbitmq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/scribe/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/scribe/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-collector/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-junit5/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-junit5/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-lens/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-lens/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/cassandra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/cassandra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/elasticsearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/mysql-v1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/mysql-v1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-storage/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/zipkin/src/main/java" charset="UTF-8" />
+  </component>
+</project>

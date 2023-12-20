@@ -1,7 +1,595 @@
-[2023-12-18 14:02:46,253] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:07:46,373] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:18:44,886] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:23:45,009] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:28:45,134] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:33:45,260] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
-[2023-12-18 14:38:45,373] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:04:54,796] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:09:54,919] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:14:55,035] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:15:25,478] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:376)
+[2023-12-19 14:17:09,648] INFO [Producer clientId=producer-3] Resetting the last seen epoch of partition connect-configs-0 to 0 since the associated topicId changed from null to Zusx2ETgTlKbHssRN_D4Uw (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,653] INFO [Worker clientId=connect-1, groupId=connect-cluster] Connector my-sink-connect config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2066)
+[2023-12-19 14:17:09,653] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:229)
+[2023-12-19 14:17:09,653] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:566)
+[2023-12-19 14:17:09,655] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation Generation{generationId=2, memberId='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:627)
+[2023-12-19 14:17:09,659] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully synced group in generation Generation{generationId=2, memberId='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:802)
+[2023-12-19 14:17:09,659] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', leaderUrl='http://192.168.0.50:8083/', offset=4, connectorIds=[my-sink-connect, my-source-connect], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2256)
+[2023-12-19 14:17:09,659] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 4 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1659)
+[2023-12-19 14:17:09,660] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connector my-sink-connect (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1776)
+[2023-12-19 14:17:09,661] INFO [my-sink-connect|worker] Creating connector my-sink-connect of type io.confluent.connect.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:300)
+[2023-12-19 14:17:09,661] INFO [my-sink-connect|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:376)
+[2023-12-19 14:17:09,662] INFO [my-sink-connect|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:376)
+[2023-12-19 14:17:09,663] INFO [my-sink-connect|worker] Instantiated connector my-sink-connect with version 10.6.3 of type class io.confluent.connect.jdbc.JdbcSinkConnector (org.apache.kafka.connect.runtime.Worker:322)
+[2023-12-19 14:17:09,663] INFO [my-sink-connect|worker] Finished creating connector my-sink-connect (org.apache.kafka.connect.runtime.Worker:347)
+[2023-12-19 14:17:09,664] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1687)
+[2023-12-19 14:17:09,665] INFO [Producer clientId=producer-2] Resetting the last seen epoch of partition connect-status-0 to 0 since the associated topicId changed from null to WjqA_sQsS66-iSEeg5Y1Cg (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,665] INFO [Producer clientId=producer-2] Resetting the last seen epoch of partition connect-status-4 to 0 since the associated topicId changed from null to WjqA_sQsS66-iSEeg5Y1Cg (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,666] INFO [Producer clientId=producer-2] Resetting the last seen epoch of partition connect-status-1 to 0 since the associated topicId changed from null to WjqA_sQsS66-iSEeg5Y1Cg (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,667] INFO [Producer clientId=producer-2] Resetting the last seen epoch of partition connect-status-2 to 0 since the associated topicId changed from null to WjqA_sQsS66-iSEeg5Y1Cg (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,669] INFO [Producer clientId=producer-2] Resetting the last seen epoch of partition connect-status-3 to 0 since the associated topicId changed from null to WjqA_sQsS66-iSEeg5Y1Cg (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,673] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:376)
+[2023-12-19 14:17:09,673] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:376)
+[2023-12-19 14:17:09,675] INFO [my-sink-connect|worker] Setting task configurations for 1 workers. (io.confluent.connect.jdbc.JdbcSinkConnector:51)
+[2023-12-19 14:17:09,683] INFO [Worker clientId=connect-1, groupId=connect-cluster] Tasks [my-sink-connect-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2081)
+[2023-12-19 14:17:09,686] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:229)
+[2023-12-19 14:17:09,686] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:566)
+[2023-12-19 14:17:09,689] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation Generation{generationId=3, memberId='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:627)
+[2023-12-19 14:17:09,691] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully synced group in generation Generation{generationId=3, memberId='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', protocol='sessioned'} (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:802)
+[2023-12-19 14:17:09,691] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', leaderUrl='http://192.168.0.50:8083/', offset=6, connectorIds=[my-sink-connect, my-source-connect], taskIds=[my-sink-connect-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2256)
+[2023-12-19 14:17:09,692] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 6 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1659)
+[2023-12-19 14:17:09,693] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting task my-sink-connect-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1701)
+[2023-12-19 14:17:09,696] INFO [my-sink-connect|task-0] Creating task my-sink-connect-0 (org.apache.kafka.connect.runtime.Worker:619)
+[2023-12-19 14:17:09,698] INFO [my-sink-connect|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:376)
+[2023-12-19 14:17:09,698] INFO [my-sink-connect|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:376)
+[2023-12-19 14:17:09,699] INFO [my-sink-connect|task-0] TaskConfig values: 
+	task.class = class io.confluent.connect.jdbc.sink.JdbcSinkTask
+ (org.apache.kafka.connect.runtime.TaskConfig:376)
+[2023-12-19 14:17:09,701] INFO [my-sink-connect|task-0] Instantiated task my-sink-connect-0 with version 10.6.3 of type io.confluent.connect.jdbc.sink.JdbcSinkTask (org.apache.kafka.connect.runtime.Worker:634)
+[2023-12-19 14:17:09,702] INFO [my-sink-connect|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2023-12-19 14:17:09,703] INFO [my-sink-connect|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task my-sink-connect-0 using the worker config (org.apache.kafka.connect.runtime.Worker:647)
+[2023-12-19 14:17:09,703] INFO [my-sink-connect|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2023-12-19 14:17:09,703] INFO [my-sink-connect|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task my-sink-connect-0 using the worker config (org.apache.kafka.connect.runtime.Worker:653)
+[2023-12-19 14:17:09,703] INFO [my-sink-connect|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task my-sink-connect-0 using the worker config (org.apache.kafka.connect.runtime.Worker:660)
+[2023-12-19 14:17:09,707] INFO [my-sink-connect|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1300)
+[2023-12-19 14:17:09,707] INFO [my-sink-connect|task-0] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:376)
+[2023-12-19 14:17:09,708] INFO [my-sink-connect|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = my-sink-connect
+	predicates = []
+	tasks.max = 1
+	topics = [my_topic_users]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:376)
+[2023-12-19 14:17:09,710] INFO [my-sink-connect|task-0] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-my-sink-connect-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-my-sink-connect
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:376)
+[2023-12-19 14:17:09,719] WARN [my-sink-connect|task-0] These configurations '[metrics.context.connect.kafka.cluster.id, metrics.context.connect.group.id]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:385)
+[2023-12-19 14:17:09,719] INFO [my-sink-connect|task-0] Kafka version: 7.3.1-ccs (org.apache.kafka.common.utils.AppInfoParser:119)
+[2023-12-19 14:17:09,719] INFO [my-sink-connect|task-0] Kafka commitId: 8628b0341c3c46766f141043367cc0052f75b090 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2023-12-19 14:17:09,719] INFO [my-sink-connect|task-0] Kafka startTimeMs: 1702963029719 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2023-12-19 14:17:09,728] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Subscribed to topic(s): my_topic_users (org.apache.kafka.clients.consumer.KafkaConsumer:973)
+[2023-12-19 14:17:09,728] INFO [my-sink-connect|task-0] Starting JDBC Sink task (io.confluent.connect.jdbc.sink.JdbcSinkTask:49)
+[2023-12-19 14:17:09,728] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1687)
+[2023-12-19 14:17:09,729] INFO [my-sink-connect|task-0] JdbcSinkConfig values: 
+	auto.create = true
+	auto.evolve = true
+	batch.size = 3000
+	connection.attempts = 3
+	connection.backoff.ms = 10000
+	connection.password = [hidden]
+	connection.url = jdbc:mariadb://localhost:3307/test
+	connection.user = root
+	db.timezone = UTC
+	delete.enabled = false
+	dialect.name = 
+	fields.whitelist = []
+	insert.mode = insert
+	max.retries = 10
+	pk.fields = []
+	pk.mode = none
+	quote.sql.identifiers = ALWAYS
+	retry.backoff.ms = 3000
+	table.name.format = ${topic}
+	table.types = [TABLE]
+ (io.confluent.connect.jdbc.sink.JdbcSinkConfig:376)
+[2023-12-19 14:17:09,731] INFO [my-sink-connect|task-0] Initializing writer using SQL dialect: MySqlDatabaseDialect (io.confluent.connect.jdbc.sink.JdbcSinkTask:68)
+[2023-12-19 14:17:09,734] INFO [my-sink-connect|task-0] WorkerSinkTask{id=my-sink-connect-0} Sink task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSinkTask:313)
+[2023-12-19 14:17:09,734] INFO [my-sink-connect|task-0] WorkerSinkTask{id=my-sink-connect-0} Executing sink task (org.apache.kafka.connect.runtime.WorkerSinkTask:198)
+[2023-12-19 14:17:09,738] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Resetting the last seen epoch of partition my_topic_users-0 to 0 since the associated topicId changed from null to OH4qDoPCTF-XLTpMHmP4_A (org.apache.kafka.clients.Metadata:402)
+[2023-12-19 14:17:09,738] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Cluster ID: iUDrAS-cQlG3NuyDSettgg (org.apache.kafka.clients.Metadata:287)
+[2023-12-19 14:17:09,738] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Discovered group coordinator DESKTOP-2BQSN3N:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:897)
+[2023-12-19 14:17:09,739] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:566)
+[2023-12-19 14:17:09,747] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Request joining group due to: need to re-join with the given member-id: connector-consumer-my-sink-connect-0-93e4ae99-94be-412a-9228-7e0be1dd345d (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1063)
+[2023-12-19 14:17:09,748] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1063)
+[2023-12-19 14:17:09,748] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:566)
+[2023-12-19 14:17:09,749] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Successfully joined group with generation Generation{generationId=1, memberId='connector-consumer-my-sink-connect-0-93e4ae99-94be-412a-9228-7e0be1dd345d', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:627)
+[2023-12-19 14:17:09,752] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Finished assignment for group at generation 1: {connector-consumer-my-sink-connect-0-93e4ae99-94be-412a-9228-7e0be1dd345d=Assignment(partitions=[my_topic_users-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:705)
+[2023-12-19 14:17:09,756] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Successfully synced group in generation Generation{generationId=1, memberId='connector-consumer-my-sink-connect-0-93e4ae99-94be-412a-9228-7e0be1dd345d', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:802)
+[2023-12-19 14:17:09,756] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Notifying assignor about the new Assignment(partitions=[my_topic_users-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:300)
+[2023-12-19 14:17:09,756] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Adding newly assigned partitions: my_topic_users-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:312)
+[2023-12-19 14:17:09,760] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Found no committed offset for partition my_topic_users-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1538)
+[2023-12-19 14:17:09,762] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Resetting offset for partition my_topic_users-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-2BQSN3N:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:399)
+[2023-12-19 14:17:19,536] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:376)
+[2023-12-19 14:26:09,743] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:27:09,664] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:32:09,781] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 2147483647 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Node 2147483647 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,954] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,956] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,955] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Cancelled in-flight FETCH request with correlation id 19739 due to node 0 being disconnected (elapsed time since creation: 12ms, elapsed time since send: 12ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:26,955] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Cancelled in-flight FETCH request with correlation id 19748 due to node 0 being disconnected (elapsed time since creation: 510ms, elapsed time since send: 510ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:26,954] INFO [Worker clientId=connect-1, groupId=connect-cluster] Group coordinator DESKTOP-2BQSN3N:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted. (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:960)
+[2023-12-19 14:36:26,957] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Error sending fetch request (sessionId=741739075, epoch=19709) to node 0: (org.apache.kafka.clients.FetchSessionHandler:602)
+org.apache.kafka.common.errors.DisconnectException
+[2023-12-19 14:36:26,957] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Error sending fetch request (sessionId=1161076903, epoch=19700) to node 0: (org.apache.kafka.clients.FetchSessionHandler:602)
+org.apache.kafka.common.errors.DisconnectException
+[2023-12-19 14:36:26,956] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Cancelled in-flight FETCH request with correlation id 2667 due to node 0 being disconnected (elapsed time since creation: 137ms, elapsed time since send: 137ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:26,956] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Cancelled in-flight FETCH request with correlation id 19745 due to node 0 being disconnected (elapsed time since creation: 135ms, elapsed time since send: 135ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:26,958] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Cancelled in-flight METADATA request with correlation id 2668 due to node 0 being disconnected (elapsed time since creation: 36ms, elapsed time since send: 36ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:26,957] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:26,958] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Error sending fetch request (sessionId=1208680483, epoch=2269) to node 0: (org.apache.kafka.clients.FetchSessionHandler:602)
+org.apache.kafka.common.errors.DisconnectException
+[2023-12-19 14:36:26,958] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Error sending fetch request (sessionId=337786205, epoch=19706) to node 0: (org.apache.kafka.clients.FetchSessionHandler:602)
+org.apache.kafka.common.errors.DisconnectException
+[2023-12-19 14:36:26,958] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Group coordinator DESKTOP-2BQSN3N:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:960)
+[2023-12-19 14:36:26,958] INFO [Worker clientId=connect-1, groupId=connect-cluster] Cancelled in-flight METADATA request with correlation id 3160 due to node 0 being disconnected (elapsed time since creation: 0ms, elapsed time since send: 0ms, request timeout: 40000ms) (org.apache.kafka.clients.NetworkClient:341)
+[2023-12-19 14:36:29,039] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,039] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,040] WARN [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,041] WARN [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,054] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,055] WARN [Producer clientId=producer-1] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,054] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,055] WARN [Producer clientId=producer-3] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,070] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,071] WARN [Producer clientId=producer-2] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,086] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,087] WARN [AdminClient clientId=adminclient-10] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,102] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,102] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,102] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:29,103] WARN [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,102] WARN [Worker clientId=connect-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,103] WARN [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:29,961] INFO [Worker clientId=connect-1, groupId=connect-cluster] Broker coordinator was unreachable for 3000ms. Revoking previous assignment Assignment{error=0, leader='connect-1-f7bdf472-d2d7-48ef-9691-d6f0b33df620', leaderUrl='http://192.168.0.50:8083/', offset=6, connectorIds=[my-sink-connect, my-source-connect], taskIds=[my-sink-connect-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} to avoid running tasks while not being a member the group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:137)
+[2023-12-19 14:36:29,963] INFO [my-sink-connect|worker] Stopping connector my-sink-connect (org.apache.kafka.connect.runtime.Worker:423)
+[2023-12-19 14:36:29,963] INFO [my-source-connect|worker] Stopping connector my-source-connect (org.apache.kafka.connect.runtime.Worker:423)
+[2023-12-19 14:36:29,963] INFO [my-sink-connect|task-0] Stopping task my-sink-connect-0 (org.apache.kafka.connect.runtime.Worker:1026)
+[2023-12-19 14:36:29,963] INFO [my-sink-connect|worker] Scheduled shutdown for WorkerConnector{id=my-sink-connect} (org.apache.kafka.connect.runtime.WorkerConnector:257)
+[2023-12-19 14:36:29,964] INFO [my-source-connect|worker] Scheduled shutdown for WorkerConnector{id=my-source-connect} (org.apache.kafka.connect.runtime.WorkerConnector:257)
+[2023-12-19 14:36:29,964] INFO [my-sink-connect|task-0] Stopping task (io.confluent.connect.jdbc.sink.JdbcSinkTask:165)
+[2023-12-19 14:36:29,965] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Revoke previously assigned partitions my_topic_users-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:331)
+[2023-12-19 14:36:29,965] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1016)
+[2023-12-19 14:36:29,965] INFO [my-sink-connect|task-0] [Consumer clientId=connector-consumer-my-sink-connect-0, groupId=connect-my-sink-connect] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1063)
+[2023-12-19 14:36:29,966] INFO [my-sink-connect|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-19 14:36:29,966] INFO [my-sink-connect|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-19 14:36:29,966] INFO [my-sink-connect|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-19 14:36:29,968] INFO [my-sink-connect|task-0] App info kafka.consumer for connector-consumer-my-sink-connect-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-19 14:36:31,196] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,196] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,196] WARN [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,197] WARN [Producer clientId=producer-3] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,211] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,211] WARN [Producer clientId=producer-2] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,216] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,216] WARN [Producer clientId=producer-1] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,241] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,241] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,241] WARN [AdminClient clientId=adminclient-10] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,241] WARN [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,320] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,320] WARN [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:31,384] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:31,384] WARN [Worker clientId=connect-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,449] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,449] WARN [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,465] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,466] WARN [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,481] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,481] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,481] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,482] WARN [Producer clientId=producer-2] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,481] WARN [Producer clientId=producer-3] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,482] WARN [Producer clientId=producer-1] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,497] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,498] WARN [AdminClient clientId=adminclient-10] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,593] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,593] WARN [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:33,689] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:33,689] WARN [Worker clientId=connect-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:34,664] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:66)
+[2023-12-19 14:36:34,664] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:320)
+[2023-12-19 14:36:34,670] INFO Stopped http_8083@1a35993f{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2023-12-19 14:36:34,670] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2023-12-19 14:36:34,672] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:337)
+[2023-12-19 14:36:34,672] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder stopping (org.apache.kafka.connect.runtime.distributed.DistributedHerder:781)
+[2023-12-19 14:36:34,967] ERROR [my-sink-connect|worker] Connector 'my-sink-connect' failed to properly shut down, has become unresponsive, and may be consuming external resources. Correct the configuration for this connector or remove the connector. After fixing the connector, it may be necessary to restart this worker to release any consumed resources. (org.apache.kafka.connect.runtime.Worker:456)
+[2023-12-19 14:36:34,967] ERROR [my-source-connect|worker] Connector 'my-source-connect' failed to properly shut down, has become unresponsive, and may be consuming external resources. Correct the configuration for this connector or remove the connector. After fixing the connector, it may be necessary to restart this worker to release any consumed resources. (org.apache.kafka.connect.runtime.Worker:456)
+[2023-12-19 14:36:34,967] ERROR [my-sink-connect|task-0] Graceful stop of task my-sink-connect-0 failed. (org.apache.kafka.connect.runtime.Worker:1057)
+[2023-12-19 14:36:35,931] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,931] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,931] WARN [Producer clientId=producer-3] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:35,932] WARN [Producer clientId=producer-2] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:35,963] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,963] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,963] WARN [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:35,964] WARN [AdminClient clientId=adminclient-10] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:35,979] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,979] WARN [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:35,995] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:35,996] WARN [Producer clientId=producer-1] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:36,074] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:36,074] WARN [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:36,259] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:36,259] WARN [Worker clientId=connect-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,774] INFO [Producer clientId=producer-3] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,774] INFO [AdminClient clientId=adminclient-10] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,774] WARN [Producer clientId=producer-3] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,775] WARN [AdminClient clientId=adminclient-10] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,838] INFO [Producer clientId=producer-2] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,838] WARN [Producer clientId=producer-2] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,869] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,869] WARN [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,885] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,885] WARN [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:38,948] INFO [Producer clientId=producer-1] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:38,948] WARN [Producer clientId=producer-1] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:39,028] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:39,028] WARN [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:39,204] INFO [Worker clientId=connect-1, groupId=connect-cluster] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:937)
+[2023-12-19 14:36:39,204] WARN [Worker clientId=connect-1, groupId=connect-cluster] Connection to node 0 (DESKTOP-2BQSN3N/192.168.0.50:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:775)
+[2023-12-19 14:36:39,684] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2342)
+[2023-12-19 14:36:39,686] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:2361)
+[2023-12-19 14:36:39,686] INFO [Worker clientId=connect-1, groupId=connect-cluster] Stopping connectors and tasks that are still assigned to this worker. (org.apache.kafka.connect.runtime.distributed.DistributedHerder:746)
+[2023-12-19 14:36:39,686] INFO [Worker clientId=connect-1, groupId=connect-cluster] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:1016)
+[2023-12-19 14:36:39,686] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-19 14:36:39,687] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-19 14:36:39,687] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-19 14:36:39,688] INFO App info kafka.connect for connect-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-19 14:36:39,688] INFO Stopping KafkaBasedLog for topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:279)
+[2023-12-19 14:36:39,689] INFO [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer:1297)
+[2023-12-19 14:36:39,690] ERROR [my-sink-connect|worker] WorkerConnector{id=my-sink-connect} Error while shutting down connector (org.apache.kafka.connect.runtime.WorkerConnector:279)
+org.apache.kafka.common.KafkaException: Producer closed while send in progress
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:986)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:949)
+	at org.apache.kafka.connect.util.KafkaBasedLog.send(KafkaBasedLog.java:352)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.send(KafkaStatusBackingStore.java:325)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.sendConnectorStatus(KafkaStatusBackingStore.java:282)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.putSafe(KafkaStatusBackingStore.java:255)
+	at org.apache.kafka.connect.runtime.AbstractHerder.onShutdown(AbstractHerder.java:175)
+	at org.apache.kafka.connect.runtime.WorkerMetricsGroup$ConnectorStatusListener.onShutdown(WorkerMetricsGroup.java:156)
+	at org.apache.kafka.connect.runtime.WorkerConnector$ConnectorMetricsGroup.onShutdown(WorkerConnector.java:449)
+	at org.apache.kafka.connect.runtime.WorkerConnector.doShutdown(WorkerConnector.java:276)
+	at org.apache.kafka.connect.runtime.WorkerConnector.doRun(WorkerConnector.java:161)
+	at org.apache.kafka.connect.runtime.WorkerConnector.run(WorkerConnector.java:123)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.kafka.common.KafkaException: Requested metadata update after close
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:126)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1134)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:983)
+	... 16 more
+[2023-12-19 14:36:39,691] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2023-12-19 14:36:39,691] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2023-12-19 14:36:39,691] ERROR [Worker clientId=connect-1, groupId=connect-cluster] Failed to shut down connector my-source-connect (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1827)
+java.lang.IllegalStateException: Cannot perform operation after producer has been closed
+	at org.apache.kafka.clients.producer.KafkaProducer.throwIfProducerClosed(KafkaProducer.java:956)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:978)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:949)
+	at org.apache.kafka.connect.util.KafkaBasedLog.send(KafkaBasedLog.java:352)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.send(KafkaStatusBackingStore.java:325)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.sendConnectorStatus(KafkaStatusBackingStore.java:282)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.putSafe(KafkaStatusBackingStore.java:255)
+	at org.apache.kafka.connect.runtime.AbstractHerder.onShutdown(AbstractHerder.java:175)
+	at org.apache.kafka.connect.runtime.WorkerMetricsGroup$ConnectorStatusListener.onShutdown(WorkerMetricsGroup.java:156)
+	at org.apache.kafka.connect.runtime.WorkerConnector$ConnectorMetricsGroup.onShutdown(WorkerConnector.java:449)
+	at org.apache.kafka.connect.runtime.WorkerConnector.cancel(WorkerConnector.java:296)
+	at org.apache.kafka.connect.runtime.Worker.awaitStopConnector(Worker.java:461)
+	at org.apache.kafka.connect.runtime.Worker.awaitStopConnectors(Worker.java:473)
+	at org.apache.kafka.connect.runtime.Worker.stopAndAwaitConnector(Worker.java:502)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.lambda$getConnectorStoppingCallable$38(DistributedHerder.java:1825)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+[2023-12-19 14:36:39,691] ERROR [Worker clientId=connect-1, groupId=connect-cluster] Failed to shut down connector my-sink-connect (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1827)
+java.lang.IllegalStateException: Cannot perform operation after producer has been closed
+	at org.apache.kafka.clients.producer.KafkaProducer.throwIfProducerClosed(KafkaProducer.java:956)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:978)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:949)
+	at org.apache.kafka.connect.util.KafkaBasedLog.send(KafkaBasedLog.java:352)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.send(KafkaStatusBackingStore.java:325)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.sendConnectorStatus(KafkaStatusBackingStore.java:282)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.putSafe(KafkaStatusBackingStore.java:255)
+	at org.apache.kafka.connect.runtime.AbstractHerder.onShutdown(AbstractHerder.java:175)
+	at org.apache.kafka.connect.runtime.WorkerMetricsGroup$ConnectorStatusListener.onShutdown(WorkerMetricsGroup.java:156)
+	at org.apache.kafka.connect.runtime.WorkerConnector$ConnectorMetricsGroup.onShutdown(WorkerConnector.java:449)
+	at org.apache.kafka.connect.runtime.WorkerConnector.cancel(WorkerConnector.java:296)
+	at org.apache.kafka.connect.runtime.Worker.awaitStopConnector(Worker.java:461)
+	at org.apache.kafka.connect.runtime.Worker.awaitStopConnectors(Worker.java:473)
+	at org.apache.kafka.connect.runtime.Worker.stopAndAwaitConnector(Worker.java:502)
+	at org.apache.kafka.connect.runtime.distributed.DistributedHerder.lambda$getConnectorStoppingCallable$38(DistributedHerder.java:1825)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+[2023-12-19 14:36:39,690] ERROR [my-source-connect|worker] WorkerConnector{id=my-source-connect} Error while shutting down connector (org.apache.kafka.connect.runtime.WorkerConnector:279)
+org.apache.kafka.common.KafkaException: Producer closed while send in progress
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:986)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:949)
+	at org.apache.kafka.connect.util.KafkaBasedLog.send(KafkaBasedLog.java:352)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.send(KafkaStatusBackingStore.java:325)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.sendConnectorStatus(KafkaStatusBackingStore.java:282)
+	at org.apache.kafka.connect.storage.KafkaStatusBackingStore.putSafe(KafkaStatusBackingStore.java:255)
+	at org.apache.kafka.connect.runtime.AbstractHerder.onShutdown(AbstractHerder.java:175)
+	at org.apache.kafka.connect.runtime.WorkerMetricsGroup$ConnectorStatusListener.onShutdown(WorkerMetricsGroup.java:156)
+	at org.apache.kafka.connect.runtime.WorkerConnector$ConnectorMetricsGroup.onShutdown(WorkerConnector.java:449)
+	at org.apache.kafka.connect.runtime.WorkerConnector.doShutdown(WorkerConnector.java:276)
+	at org.apache.kafka.connect.runtime.WorkerConnector.doRun(WorkerConnector.java:161)
+	at org.apache.kafka.connect.runtime.WorkerConnector.run(WorkerConnector.java:123)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.kafka.common.KafkaException: Requested metadata update after close
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:126)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1134)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:983)
+	... 16 more
+[2023-12-19 14:36:39,693] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder stopped (org.apache.kafka.connect.runtime.distributed.DistributedHerder:801)
+[2023-12-19 14:36:39,694] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:71)
+[2023-12-19 14:36:39,691] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2023-12-19 14:36:39,694] INFO App info kafka.producer for producer-2 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2023-12-19 14:36:39,694] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1016)
+[2023-12-19 14:36:39,694] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1063)

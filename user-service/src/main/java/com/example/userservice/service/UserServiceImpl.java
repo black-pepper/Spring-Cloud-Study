@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpMethod;
@@ -36,6 +38,8 @@ public class UserServiceImpl implements UserService {
 //    private final RestTemplate restTemplate;
 
     private final OrderServiceClient orderServiceClient;
+
+    private final CircuitBreakerFactory circuitBreakerFactory;
 
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -81,7 +85,7 @@ public class UserServiceImpl implements UserService {
 //        List<ResponseOrder> orderList = orderListResponse.getBody();
 
 //        feign client 사용
-        List<ResponseOrder> orderList = orderServiceClient.getOrders(userId);;
+//        List<ResponseOrder> orderList = orderServiceClient.getOrders(userId);;
 
 //        List<ResponseOrder> orderList = null;
 //
@@ -91,7 +95,11 @@ public class UserServiceImpl implements UserService {
 //            log.error(ex.getMessage());
 //        }
 
-
+        log.info("Before call orders microservice");
+        CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
+        List<ResponseOrder> orderList = circuitBreaker.run(() -> orderServiceClient.getOrders(userId),
+                throwable -> new ArrayList<>());
+        log.info("After call orders microservice");
         userDto.setOrders(orderList);
 
         return userDto;

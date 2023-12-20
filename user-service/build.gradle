@@ -11,21 +11,6 @@ java {
 	sourceCompatibility = '17'
 }
 
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
-
-repositories {
-	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
-}
-
-ext {
-	set('springCloudVersion', "2023.0.0-RC1")
-}
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
@@ -49,11 +34,36 @@ dependencies {
 	implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.1'
 
 	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client'
+
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation "org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j"
+	implementation "org.springframework.cloud:spring-cloud-starter-circuitbreaker-reactor-resilience4j"
+//	implementation "org.springframework.cloud:spring-cloud-starter-circuitbreaker-spring-retry"
+
+	implementation "org.springframework.cloud:spring-cloud-starter-sleuth"
+	implementation "org.springframework.cloud:spring-cloud-starter-zipkin:2.2.3.RELEASE"
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+}
+
+ext {
+	set('springCloudVersion', "2023.0.0-RC1")
 }
 
 dependencyManagement {

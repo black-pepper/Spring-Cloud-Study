@@ -4,30 +4,37 @@ server:
 spring:
   application:
     name: order-service
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0
   h2:
     console:
       enabled: true
       settings:
         web-allow-others: true
       path: /h2-console
-#  datasource:
-#    driver-class-name: org.h2.Driver
-#    url: jdbc:h2:mem:testdb
-#    username: sa
   jpa:
     hibernate:
 #      ddl-auto: create-drop
-      ddl-auto: create-drop
+      ddl-auto: update
     defer-datasource-initialization: true
   sql:
     init:
       mode: always
 #  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#  datasource:
 #    url: jdbc:mysql://54.180.96.26:53245/mydb?serverTimezone=UTC&useLegacyDatetimeCode=false
 #    username: root
 #    password: asdqwe123!
   datasource:
-    url: jdbc:mysql://localhost:3307/test
+    url: jdbc:mariadb://localhost:3307/test
+    driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: 1234
 

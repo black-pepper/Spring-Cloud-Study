@@ -9,6 +9,25 @@
         </processorPath>
         <module name="order-service.main" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zipkin" />
+        <module name="zipkin-lens" />
+        <module name="zipkin-storage-mysql-v1" />
+        <module name="zipkin-collector-activemq" />
+        <module name="zipkin-collector-kafka" />
+        <module name="zipkin-collector" />
+        <module name="zipkin-storage-elasticsearch" />
+        <module name="zipkin-collector-scribe" />
+        <module name="zipkin-tests" />
+        <module name="zipkin-collector-rabbitmq" />
+        <module name="zipkin-storage-cassandra" />
+        <module name="zipkin-junit5" />
+        <module name="zipkin-server" />
+        <module name="benchmarks" />
+      </profile>
     </annotationProcessing>
   </component>
 </project>

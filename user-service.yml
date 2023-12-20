@@ -1,12 +1,25 @@
 spring:
-#  datasource:
+  h2:
+    console:
+      enabled: true
+      settings:
+      web-allow-others: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      #      ddl-auto: create-drop
+      ddl-auto: update
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
 #    driver-class-name: org.h2.Driver
 #    url: jdbc:h2:mem:testdb
 #    username: sa
 #    password: '{cipher}ad84bcc8a350b001fcbdd9ed507be532ecf3e8334f9886fbad9f0c2329f6ab58'
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:mysql://localhost:3307/test
+    url: jdbc:mariadb://localhost:3307/test
+    driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: 1234
 
