@@ -33,7 +33,7 @@ public class WebSecurity {
                     request.requestMatchers(antMatcher("/**")).permitAll();
                 })
                 .addFilter(getAuthenticationFilter(authenticationConfiguration));
-        http.headers().frameOptions().disable(); //H2 Console 설정
+//        http.headers().frameOptions().disable(); //H2 Console 설정
 
         return http.build();
     }
