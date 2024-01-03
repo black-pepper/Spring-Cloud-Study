@@ -5,133 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c001d1e1-83f9-49ac-9b78-fdb723e90b21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/catalog-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/discoveryservice-gradle.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/first-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/order-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/second-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/스프링 클라우드.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/ApigatewayServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/config/FilterConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/filter/AuthorizationHeaderFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/filter/CustomFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/filter/GlobalFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/filter/LoggingFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/test/java/com/example/apigatewayservice/ApigatewayServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/CatalogServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/controller/CatalogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/dto/CatalogDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/jpa/CatalogEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/jpa/CatalogRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/service/CatalogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/service/CatalogServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/vo/ResponseCatalog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalogservice/CatalogServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/java/com/example/configservice/ConfigServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/test/java/com/example/configservice/ConfigServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discoveryservice.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discoveryservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discoveryservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/test/java/com/example/firstservice/FirstServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/OrderServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/dto/OrderDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/jpa/OrderEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/jpa/OrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/vo/RequestOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/vo/ResponseOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/example/orderservice/OrderServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/src/test/java/com/example/secondservice/SecondServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/Dummy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/jpa/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/jpa/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/security/AuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/security/CustomAuthenticationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/security/CustomUserDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/security/WebSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/vo/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/vo/RequestLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/vo/RequestUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/vo/ResponseOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/vo/ResponseUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-service/src/test/java/com/example/firstservice/FirstServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second-service/src/test/java/com/example/secondservice/SecondServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/src/main/java/com/example/zuulservice/ZuulServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/src/main/java/com/example/zuulservice/filter/ZuulLoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-service/src/test/java/com/example/zuulservice/ZuulServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,23 +100,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="order-service" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="order-service" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="order-service" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -244,6 +135,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ZuulServiceApplication.executor": "Run",
     "Gradle.apigateway-service [:ApigatewayServiceApplication.main()].executor": "Run",
     "Gradle.apigateway-service [assemble].executor": "Run",
     "Gradle.apigateway-service [clean].executor": "Run",
@@ -254,16 +146,17 @@
     "Gradle.discoveryservice [:DiscoveryserviceApplication.main()].executor": "Run",
     "Gradle.discoveryservice [assemble].executor": "Run",
     "Gradle.discoveryservice [clean].executor": "Run",
+    "Gradle.first-service [:FirstServiceApplication.main()].executor": "Run",
     "Gradle.order-service [:OrderServiceApplication.main()].executor": "Run",
     "Gradle.order-service [assemble].executor": "Run",
     "Gradle.order-service [clean].executor": "Run",
+    "Gradle.second-service [:SecondServiceApplication.main()].executor": "Run",
     "Gradle.user-service [:UserServiceApplication.main()].executor": "Run",
     "Gradle.user-service [assemble].executor": "Run",
     "Gradle.user-service [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/magna/Desktop/study/Spring-Cloud-Study",
+    "last_opened_file_path": "C:/Users/magna/Desktop/study/Spring-Cloud-Study/second-service/src/main/resources",
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
@@ -273,24 +166,25 @@
       <recent name="com.example.userservice.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\magna\Desktop\study\Spring-Cloud-Study\second-service\src\main\resources" />
       <recent name="C:\Users\magna\Desktop\study\Spring-Cloud-Study\apigateway-service" />
       <recent name="C:\Users\magna\Desktop\study\Spring-Cloud-Study" />
       <recent name="C:\Users\magna\Desktop\study\Spring-Cloud-Study\config-service\src\main\resources" />
       <recent name="C:\Users\magna\Desktop\study\스프링 클라우드\order-service\src\main\resources" />
-      <recent name="C:\Users\magna\Desktop\study\스프링 클라우드\second-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\magna\Desktop\study\Spring-Cloud-Study\apigateway-service\src\main\resources" />
       <recent name="C:\Users\magna\Desktop\study\스프링 클라우드\catalog-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.secondservice" />
       <recent name="com.example.orderservice.messagequeue" />
       <recent name="com.example.orderservice.service" />
       <recent name="com.example.orderservice.vo" />
       <recent name="com.example.apigatewayservice.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication (1)">
+  <component name="RunManager" selected="Application.SecondServiceApplication">
     <configuration name="ApigatewayServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.apigatewayservice.ApigatewayServiceApplication" />
       <module name="apigateway-service.main" />
@@ -317,12 +211,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.firstservice.FirstServiceApplication" />
+      <module name="first-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.firstservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceApplication (1)" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.orderservice.OrderServiceApplication" />
       <module name="order-service.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.orderservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.secondservice.SecondServiceApplication" />
+      <module name="second-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.secondservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -344,92 +264,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="apigateway-service [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/apigateway-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration name="ZuulServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.zuulservice.ZuulServiceApplication" />
+      <module name="zuul-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zuulservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="apigateway-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/apigateway-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="order-service [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/order-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="order-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/order-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+    <configuration name="mvnw" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/zuul-service/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/zuul-service" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/sh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
@@ -437,26 +308,26 @@
       <item itemvalue="Application.UserServiceApplication (1)" />
       <item itemvalue="Application.ApigatewayServiceApplication" />
       <item itemvalue="Application.OrderServiceApplication (1)" />
+      <item itemvalue="Application.FirstServiceApplication" />
+      <item itemvalue="Application.SecondServiceApplication" />
+      <item itemvalue="Application.ZuulServiceApplication" />
       <item itemvalue="Application.DiscoveryserviceApplication" />
-      <item itemvalue="Gradle.order-service [assemble]" />
-      <item itemvalue="Gradle.order-service [clean]" />
-      <item itemvalue="Gradle.apigateway-service [assemble]" />
-      <item itemvalue="Gradle.apigateway-service [clean]" />
+      <item itemvalue="Shell Script.mvnw" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SecondServiceApplication" />
+        <item itemvalue="Application.FirstServiceApplication" />
+        <item itemvalue="Application.ZuulServiceApplication" />
+        <item itemvalue="Shell Script.mvnw" />
         <item itemvalue="Application.DiscoveryserviceApplication" />
-        <item itemvalue="Gradle.order-service [assemble]" />
-        <item itemvalue="Gradle.order-service [clean]" />
-        <item itemvalue="Gradle.apigateway-service [assemble]" />
-        <item itemvalue="Gradle.apigateway-service [clean]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
       </set>
     </attachedChunks>
   </component>
