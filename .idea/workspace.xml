@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c001d1e1-83f9-49ac-9b78-fdb723e90b21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/ApigatewayServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/test/java/com/example/apigatewayservice/ApigatewayServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/example/apigatewayservice/config/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/second-service/src/main/java/com/example/secondservice/SecondServiceController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +155,7 @@
       <recent name="com.example.apigatewayservice.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecondServiceApplication">
+  <component name="RunManager" selected="Application.ApigatewayServiceApplication">
     <configuration name="ApigatewayServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.apigatewayservice.ApigatewayServiceApplication" />
       <module name="apigateway-service.main" />
