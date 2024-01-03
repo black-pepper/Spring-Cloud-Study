@@ -1,2 +1,3 @@
-/prometheus-2.48.1.windows-amd64/**
+/prometheus-2.49.0-rc.1.windows-amd64/**
 /grafana-v10.2.3/**
+/docker-files/mysql_data/**
