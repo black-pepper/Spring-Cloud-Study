@@ -8,7 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/black-pepper/Spring-Cloud-Study.git
-          branch: master
+          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main??? ? ??
 #          username: {username}
 #          password: {personal access tokens}

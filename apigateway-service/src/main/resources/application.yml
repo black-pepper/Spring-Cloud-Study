@@ -10,6 +10,9 @@ eureka:
 spring:
   application:
     name: apigateway-service
+  config:
+    import:
+      - classpath:/bootstrap.yml
   cloud:
     gateway:
       default-filters:
@@ -39,6 +42,15 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+            - AuthorizationHeaderFilter
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
@@ -78,5 +90,11 @@ spring:
                 preLogger: true
                 postLogger: true
 
-token:
-  secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
+#token:
+#  secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace

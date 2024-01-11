@@ -27,6 +27,7 @@ public class WebSecurity {
         http.csrf(csrf->csrf.disable());
         http.authorizeHttpRequests(request->{
             request.requestMatchers(antMatcher("/**")).permitAll();
+            request.requestMatchers(antMatcher("/actuator/**")).permitAll();
             request.requestMatchers(antMatcher("/users/**")).permitAll();
             request.requestMatchers(antMatcher("/h2-console/**")).permitAll();
         }).addFilter(getAuthenticationFilter());

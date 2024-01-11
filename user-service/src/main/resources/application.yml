@@ -38,3 +38,9 @@ logging:
 #token:
 #  expiration_time: 86400000
 #  secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
