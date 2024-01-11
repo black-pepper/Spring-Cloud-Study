@@ -12,6 +12,6 @@ spring:
         native:
           search-location: file:///${user.home}\Desktop\Work\native\file-repo
 #        git:
-#          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main??? ? ??
+#          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main브랜치 값 적용
 #          username: {username}
 #          password: {personal access tokens}
