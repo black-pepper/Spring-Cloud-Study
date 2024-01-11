@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: user-service
+  config:
+    import:
+      - classpath:/bootstrap.yml
   h2:
     console:
       enabled: true
@@ -32,6 +35,6 @@ logging:
   level:
     com.example.userservice: DEBUG
 
-token:
-  expiration_time: 86400000
-  secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
+#token:
+#  expiration_time: 86400000
+#  secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
