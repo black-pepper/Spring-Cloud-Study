@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 #  profiles:
 #    active: native
   cloud:
@@ -15,3 +20,9 @@ spring:
           uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main브랜치 값 적용
 #          username: {username}
 #          password: {personal access tokens}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
