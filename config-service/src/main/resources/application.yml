@@ -4,10 +4,14 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main??? ? ??
+        native:
+          search-location: file:///${user.home}\Desktop\Work\native\file-repo
+#        git:
+#          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main??? ? ??
 #          username: {username}
 #          password: {personal access tokens}

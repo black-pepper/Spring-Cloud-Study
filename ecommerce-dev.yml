@@ -1,0 +1,6 @@
+token:
+  expiration_time: 86400000
+  secret: 0dTC0OQTsUKU+Y2rRh68CSdny1UgGtsCXpL7wWfiAjWD4iMfYqX/Cd+4uEAWvayoDdENaPAF5QeLOTc7J/lT5g==
+
+gateway:
+  ip: localhost
