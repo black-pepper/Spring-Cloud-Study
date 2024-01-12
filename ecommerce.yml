@@ -9,3 +9,5 @@ token:
   secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
 gateway:
   ip: localhost
+order_service:
+  url: http://localhost:8000/order-service/%s/orders
