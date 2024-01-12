@@ -3,7 +3,9 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
     username: sa
-    password: '{cipher}27c4d5e57bef5baf0d50bce5ca12e4bab301a1130d047ee0bad3e8615876a8e8'
+#    password: '{cipher}27c4d5e57bef5baf0d50bce5ca12e4bab301a1130d047ee0bad3e8615876a8e8'
+#    password: '{cipher}AQBjNsRP5CHCsCpOg0YNYFT/Mx/k/5Thzt4Vihn+s95266ftVYECJT8DPyij+5Fw1erAjW9uGQRpau6LhDGTFwWLr282Fk1vI/0tzs5J//H7aeaUyUmvNxrwcpGZTjczvCvYFMTQRY9OYQM8qSYi6WAlWHvprbdt8JGMDSjho8GX1XG7uC74dmRI4uSdHTRcshDPvy0xEgPAQEn1lTgJY53SkRpgXRjAOTo3lzH6OvHOABKLudfSUkq8Y051Qzol62w8SUdZL9Akd/VIJUUs0ID+hY5grkbKemVz5i6w8UFKPJFZwM0McxzlgI4NUPSWeDqsyMNUrtbM073jhM8V97x9q4C83vRVTT5a7aaDyooFbpnyiUHBwy1Ip2imKjB2Mf8='
+    password: 1234
 
 token:
   expiration_time: 86400000
