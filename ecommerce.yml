@@ -16,3 +16,5 @@ gateway:
 
 order_service:
   url: http://localhost:8000/order-service/%s/orders
+  exception:
+    orders_is_empty: User's orders is empty.
