@@ -49,3 +49,9 @@ management:
     web:
       exposure:
         include: refresh, health, beans, busrefresh
+  tracing:
+    sampling:
+      probability: 1.0
+    zipkin:
+      tracing:
+        endpoint: "http://localhost:9411"
