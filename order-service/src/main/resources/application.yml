@@ -44,3 +44,7 @@ management:
     zipkin:
       tracing:
         endpoint: "http://localhost:9411"
+  endpoints:
+    web:
+      exposure:
+        include: health, httptrace, info, metrics, prometheus
