@@ -8,7 +8,7 @@ token:
   expiration_time: 86400000
   secret: X0JpgxoT9X0kbkkK3oQe+01qfWqPazy8iVFjIa/C7smYXlHiXie77Rk7gdVzq515959+3QodcuHIsKixyxyLbA==
 gateway:
-  ip: localhost
+  ip: 172.18.0.8
 order_service:
   url: http://localhost:8000/order-service/%s/orders
   exception:
