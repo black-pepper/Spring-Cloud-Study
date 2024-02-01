@@ -10,26 +10,41 @@ spring:
       settings:
         web-allow-others: true
       path: /h2-console
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb
-    username: sa
   jpa:
     hibernate:
-      ddl-auto: create-drop
-  sql:
-    init:
-      mode: always
+      ddl-auto: update
+#    defer-datasource-initialization: true
+  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password: 1234
+    url: jdbc:mariadb://localhost:3307/mydb
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: test1357
 
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     register-with-eureka: true
-    getch-registry: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
 
 logging:
   level:
-    com.example.catalogservice: DEBUG
+    com.example.orderservice: DEBUG
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+    zipkin:
+      tracing:
+        endpoint: "http://localhost:9411"
+  endpoints:
+    web:
+      exposure:
+        include: health, httptrace, info, metrics, prometheus

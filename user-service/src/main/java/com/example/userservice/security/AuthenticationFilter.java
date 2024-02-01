@@ -10,6 +10,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -21,13 +22,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
+@Slf4j
 public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    private UserService userService;
-    private Environment env;
+    private final UserService userService;
+    private final Environment env;
 
-    public AuthenticationFilter(AuthenticationManager authenticationManager,
-                                UserService userService, Environment env) {
+    public AuthenticationFilter(AuthenticationManager authenticationManager, UserService userService, Environment env){
         super.setAuthenticationManager(authenticationManager);
         this.userService = userService;
         this.env = env;
@@ -35,18 +36,20 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request,
-                                                HttpServletResponse response) throws AuthenticationException {
-        try {
-            RequestLogin creds = new ObjectMapper().readValue(request.getInputStream(), RequestLogin.class);
+                                HttpServletResponse response) throws AuthenticationException {
+       try {
+           RequestLogin creds = new ObjectMapper().readValue(request.getInputStream(), RequestLogin.class);
 
-            return getAuthenticationManager().authenticate(
-                    new UsernamePasswordAuthenticationToken(
-                            creds.getEmail(), creds.getPassword(), new ArrayList<>())
-            );
-
-        } catch (IOException e) {
-            throw new RuntimeException();
-        }
+           return getAuthenticationManager().authenticate(
+                   new UsernamePasswordAuthenticationToken(
+                           creds.getEmail(),
+                           creds.getPassword(),
+                           new ArrayList<>()
+                   )
+           );
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
     }
 
     @Override
@@ -54,7 +57,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication authResult) throws IOException, ServletException {
-
         String userEmail = (String) authResult.getPrincipal();
         UserDto userDetails = userService.getUserDetailsByEmail(userEmail);
 
@@ -63,7 +65,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
                 .setExpiration(new Date(System.currentTimeMillis() + Long.parseLong(env.getProperty("token.expiration_time"))))
                 .signWith(SignatureAlgorithm.HS512, env.getProperty("token.secret"))
                 .compact();
-
         response.addHeader("token", token);
         response.addHeader("userId", userDetails.getUserId());
     }

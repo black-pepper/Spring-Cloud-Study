@@ -17,6 +17,7 @@ public class RequestUser {
     private String name;
 
     @NotNull(message = "Password cannot be null")
-    @Size(min = 8, message = "Password must be equal or grater then 8 characters")
+    @Size(min = 8, message = "Password must be equal or grater than 8 characters")
     private String pwd;
+
 }

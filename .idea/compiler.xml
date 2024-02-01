@@ -10,5 +10,10 @@
         <module name="apigateway-service.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="second-service" target="17" />
+      <module name="second-service.main" target="17" />
+      <module name="second-service.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

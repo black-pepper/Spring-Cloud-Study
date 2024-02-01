@@ -4,13 +4,15 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.ColumnDefault;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @Entity
 @Table(name = "catalogs")
-public class CatalogEntity {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CatalogEntity implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, length = 120, unique = true)
@@ -24,5 +26,5 @@ public class CatalogEntity {
 
     @Column(nullable = false, updatable = false, insertable = false)
     @ColumnDefault(value = "CURRENT_TIMESTAMP")
-    private Date createdAt;
+    private Date createAt;
 }

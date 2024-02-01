@@ -1,5 +1,6 @@
 package com.example.userservice.security;
 
+import com.example.userservice.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
@@ -18,16 +19,12 @@ import javax.security.sasl.AuthenticationException;
 @RequiredArgsConstructor
 @Slf4j
 public class CustomAuthenticationManager implements AuthenticationManager {
-    private final CustomUserDetailService customUserDetailService;
+    private final UserService userService;
     private final PasswordEncoder passwordEncoder;
-//    @Bean
-//    protected PasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
 
     @Override
     public Authentication authenticate(Authentication authentication) {
-        UserDetails userDetails = customUserDetailService.loadUserByUsername(authentication.getName());
+        UserDetails userDetails = userService.loadUserByUsername(authentication.getName());
         if (!passwordEncoder.matches(authentication.getCredentials().toString(), userDetails.getPassword())) {
             throw new BadCredentialsException("Wrong password");
         }

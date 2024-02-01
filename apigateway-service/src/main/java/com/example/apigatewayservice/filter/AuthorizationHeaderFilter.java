@@ -26,7 +26,7 @@ public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<Auth
     public static class Config {
 
     }
-    
+
     @Override
     public GatewayFilter apply(Config config) {
         return (exchange, chain) -> {
@@ -37,20 +37,21 @@ public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<Auth
             }
 
             String authorizationHeader = request.getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
-            String jwt = authorizationHeader.replace("Bearer", "");
-            
+            String jwt = authorizationHeader.replace("Bearer ", "");
+
             if(!isJwtValid(jwt)) {
                 return onError(exchange, "JWT token is not valid", HttpStatus.UNAUTHORIZED);
             }
 
             return chain.filter(exchange);
-            };
-        }
+        };
+    }
 
     private boolean isJwtValid(String jwt) {
         boolean returnValue = true;
 
         String subject = null;
+        log.info("token.secret = {}", env.getProperty("token.secret"));
 
         try {
             subject = Jwts.parser().setSigningKey(env.getProperty("token.secret"))

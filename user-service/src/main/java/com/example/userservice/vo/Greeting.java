@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class Greeting {
     @Value("${greeting.message}")
     private String message;

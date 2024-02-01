@@ -4,15 +4,25 @@ server:
 spring:
   application:
     name: config-service
-  profiles:
-    active: native #native or git
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+#  profiles:
+#    active: native
   cloud:
     config:
       server:
-        native:
-          search-location: file:///C:\Users\magna\Desktop\study\Spring-Cloud-Study
+#        native:
+#          search-location: file:///${user.home}\Desktop\Work\native\file-repo
         git:
-          uri: https://github.com/black-pepper/Spring-Cloud-Study.git
-          username: black-pepper
-          password: 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
-#          uri: file:///C:\Users\magna\Desktop\study\Spring-Cloud-Study
+          uri: https://github.com/black-pepper/Spring-Cloud-Study.git #main브랜치 값 적용
+#          username: {username}
+#          password: {personal access tokens}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh

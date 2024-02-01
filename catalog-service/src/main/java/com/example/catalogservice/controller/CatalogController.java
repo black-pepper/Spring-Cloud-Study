@@ -20,23 +20,24 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CatalogController {
     private final Environment env;
-    private final  CatalogService catalogService;
+    private final CatalogService catalogService;
 
-    @GetMapping("/heath_check")
+    @GetMapping("/health_check")
     public String status() {
-        return String.format("It's Working in Catalog Service on PORT %s",
-                env.getProperty("local.server.port"));
+        return String.format("It's Working in Catalog Service on PORT %s", env.getProperty("local.server.port"));
     }
 
     @GetMapping("/catalogs")
-    public ResponseEntity<List<ResponseCatalog>> getUsers() {
+    public ResponseEntity<List<ResponseCatalog>> getCatalogs() {
         Iterable<CatalogEntity> catalogList = catalogService.getAllCatalogs();
 
+        ModelMapper modelMapper = new ModelMapper();
         List<ResponseCatalog> result = new ArrayList<>();
         catalogList.forEach(v -> {
-            result.add(new ModelMapper().map(v, ResponseCatalog.class));
+            result.add(modelMapper.map(v, ResponseCatalog.class));
         });
 
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
+
 }
