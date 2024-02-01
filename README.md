@@ -31,6 +31,18 @@ docker run -d --name rabbitmq --network ecommerce-network -p 15672:15672 -p 5672
 ```
 
 ## Config Server
+gradle 버전 수정
+```
+//version = '0.0.1-SNAPSHOT'
+version = '1.0'
+```
+Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/config-service-1.0.jar ConfigServer.jar
+ENTRYPOINT ["java","-jar","ConfigServer.jar"]
+```
 docker image 생성
 ```
 docker build -t peppercode01/config-service:1.0 .
@@ -41,6 +53,13 @@ run -d -p 8888:8888 --network ecommerce-network -e "spring.rabbitmq.host=rabbitm
 ```
 
 ## Discovery Service
+gradle 버전 수정 후 Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/discoveryservice-1.0.jar DiscoveryService.jar
+ENTRYPOINT ["java", "-jar", "DiscoveryService.jar"]
+```
 docker image 생성
 ```
 docker build --tag peppercode01/discovery-service:1.0 .
@@ -51,6 +70,13 @@ docker run -d -p 8761:8761 --network ecommerce-network -e "spring.cloud.config.u
 ```
 
 ## Apigateway Service
+gradle 버전 수정 후 Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/apigateway-service-1.0.jar ApigatewayService.jar
+ENTRYPOINT ["java", "-jar", "ApigatewayService.jar"]
+```
 docker image 생성
 ```
 docker build -t peppercode01/apigateway-service:1.0 .
@@ -61,6 +87,15 @@ docker run -d -p 8000:8000 --network ecommerce-network -e "spring.cloud.config.u
 ```
 
 ## MariaDB
+/mariadb/data 파일을 /mysql_data/data로 복사 후 Dockerfile 생성
+```
+FROM mariadb
+ENV MYSQL_ROOT_PASSWORD test1357
+ENV MYSQL_DATABASE mydb
+COPY ./mysql_data/data /var/lib/mysql
+EXPOSE 3306
+CMD ["--user=root"]
+```
 MariaDB 실행
 ```
 docker run -d -p 3306:3306  --network ecommerce-network --name mariadb peppercode01/my-mariadb:1.0
@@ -81,9 +116,52 @@ exit
 ```
 
 ## Kafka
+Kafka Docker 저장소 클론
+```
+git clone https://github.com/wurstmeister/kafka-docker
+```
+docker-compose-single-broker.yml 수정
+```yml
+version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      my-network:
+        ipv4_address: 172.18.0.100
+  kafka:
+    # build: .
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 172.18.0.101
+      KAFKA_CREATE_TOPICS: "test:1:1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - zookeeper
+    networks:
+      my-network:
+        ipv4_address: 172.18.0.101
+
+networks:
+  my-network:
+    name: ecommerce-network
+    external: true
+```
 Kafka 실행
 ```
 docker-compose -f docker-compose-single-broker.yml up -d
+```
+
+## Zipkin
+Zipkin 실행
+```
+docker run -d -p 9411:9411 --network ecommerce-network --name zipkin openzipkin/zipkin
 ```
 
 ## Monitoring
@@ -127,6 +205,13 @@ docker run -d -p 3000:3000 --network ecommerce-network --name grafana grafana/gr
 ```
 
 ## User Microservice
+gradle 버전 수정 후 Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/user-service-1.0.jar UserService.jar
+ENTRYPOINT ["java", "-jar", "UserService.jar"]
+```
 docker image 생성
 ```
 docker build -t peppercode01/user-service:1.0 .
@@ -137,6 +222,13 @@ docker run -d --network ecommerce-network  --name user-service -e "spring.cloud.
 ```
 
 ## Order Microservice
+gradle 버전 수정 후 Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/order-service-1.0.jar OrderService.jar
+ENTRYPOINT ["java", "-jar", "OrderService.jar"]
+```
 docker image 생성
 ```
 docker build -t peppercode01/order-service:1.0 .
@@ -147,6 +239,13 @@ docker run -d --network ecommerce-network  --name order-service -e "spring.zipki
 ```
 
 ## Catalog Microservice
+gradle 버전 수정 후 Dockerfile 생성
+```
+FROM openjdk:17-ea-11-jdk-slim
+VOLUME /tmp
+COPY build/libs/catalog-service-1.0.jar CatalogService.jar
+ENTRYPOINT ["java", "-jar", "CatalogService.jar"]
+```
 docker image 생성
 ```
 docker build -t peppercode01/catalog-service:1.0 .
