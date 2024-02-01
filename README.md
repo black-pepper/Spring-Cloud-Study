@@ -61,7 +61,7 @@ docker run -d -p 8000:8000 --network ecommerce-network -e "spring.cloud.config.u
 ```
 
 ## MariaDB
-mariaDB 실행
+MariaDB 실행
 ```
 docker run -d -p 3306:3306  --network ecommerce-network --name mariadb peppercode01/my-mariadb:1.0
 ```
@@ -81,15 +81,49 @@ exit
 ```
 
 ## Kafka
-kafka 실행
+Kafka 실행
 ```
 docker-compose -f docker-compose-single-broker.yml up -d
 ```
 
 ## Monitoring
-prometheus
+Prometheus 실행
 ```
-docker run -d -p 9090:9090 --network ecommerce-network --name prometheus -v C:/Users/magna/Desktop/study/Spring-Cloud-Study/docker-files/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+docker run -d -p 9090:9090 --network ecommerce-network --name prometheus
+```
+Files - etc/prometheus/prometheus.yml 파일 수정
+```yml
+...
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "prometheus"
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ["host.docker.internal:9090"]
+
+  #추가
+  - job_name: 'user-service'
+    scrape_interval: 15s
+    metrics_path: '/user-service/actuator/prometheus'
+    static_configs:
+    - targets: ['host.docker.internal:8000']
+  - job_name: 'order-service'
+    scrape_interval: 15s
+    metrics_path: '/order-service/actuator/prometheus'
+    static_configs:
+    - targets: ['host.docker.internal:8000']
+  - job_name: 'apigateway-service'
+    scrape_interval: 15s
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+    - targets: ['host.docker.internal:8000']
+```
+Grafana 실행
+```
+docker run -d -p 3000:3000 --network ecommerce-network --name grafana grafana/grafana 
 ```
 
 ## User Microservice
