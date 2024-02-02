@@ -262,7 +262,7 @@ docker run -d --network ecommerce-network  --name order-service -e "spring.zipki
 
 ## Catalog Microservice
 1. gradle 버전 수정 (1.0)
-2. KafkaProducerConfig.producerFactory의 kafka 주소 변경
+2. KafkaConsumerConfig.producerFactory의 kafka 주소 변경
 ```java
 //props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
 props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "172.18.0.101:9092");
