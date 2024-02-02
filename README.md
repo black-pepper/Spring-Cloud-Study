@@ -31,63 +31,68 @@ docker run -d --name rabbitmq --network ecommerce-network -p 15672:15672 -p 5672
 ```
 
 ## Config Server
-gradle 버전 수정
+1. gradle 버전 수정
 ```
 //version = '0.0.1-SNAPSHOT'
 version = '1.0'
 ```
-Dockerfile 생성
+2. gradle clean, gradle assemble
+3. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/config-service-1.0.jar ConfigServer.jar
 ENTRYPOINT ["java","-jar","ConfigServer.jar"]
 ```
-docker image 생성
+4. docker image 생성
 ```
 docker build -t peppercode01/config-service:1.0 .
 ```
-docker image 실행
+5. docker image 실행
 ```
 run -d -p 8888:8888 --network ecommerce-network -e "spring.rabbitmq.host=rabbitmq" -e "spring.profiles.active=default" --name config-service peppercode01/config-service:1.0
 ```
 
 ## Discovery Service
-gradle 버전 수정 후 Dockerfile 생성
+1. gradle 버전 수정 (1.0)
+2. gradle clean, gradle assemble
+3. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/discoveryservice-1.0.jar DiscoveryService.jar
 ENTRYPOINT ["java", "-jar", "DiscoveryService.jar"]
 ```
-docker image 생성
+4. docker image 생성
 ```
 docker build --tag peppercode01/discovery-service:1.0 .
 ```
-docker image 실행
+5. docker image 실행
 ```
 docker run -d -p 8761:8761 --network ecommerce-network -e "spring.cloud.config.uri=http://config-service:8888" --name discovery-service peppercode01/discovery-service:1.0
 ```
 
 ## Apigateway Service
-gradle 버전 수정 후 Dockerfile 생성
+1. gradle 버전 수정 (1.0)
+2. gradle clean, gradle assemble
+3. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/apigateway-service-1.0.jar ApigatewayService.jar
 ENTRYPOINT ["java", "-jar", "ApigatewayService.jar"]
 ```
-docker image 생성
+4. docker image 생성
 ```
 docker build -t peppercode01/apigateway-service:1.0 .
 ```
-docker image 실행
+5. docker image 실행
 ```
 docker run -d -p 8000:8000 --network ecommerce-network -e "spring.cloud.config.uri=http://config-service:8888" -e "spring.rabbitmq.host=rabbitmq" -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" --name apigateway-service peppercode01/apigateway-service:1.0
 ```
 
 ## MariaDB
-/mariadb/data 파일을 /mysql_data/data로 복사 후 Dockerfile 생성
+1. /mariadb/data 파일을 /mysql_data/data로 복사 후 Dockerfile 생성
 ```
 FROM mariadb
 ENV MYSQL_ROOT_PASSWORD test1357
@@ -95,6 +100,14 @@ ENV MYSQL_DATABASE mydb
 COPY ./mysql_data/data /var/lib/mysql
 EXPOSE 3306
 CMD ["--user=root"]
+```
+2. docker image 생성
+```
+docker build -t peppercode01/my_mariadb-f Dockerfile_mariadb .
+```
+3. docker image 실행
+```
+docker run -d -p 3306:3306 --network ecommerce-network --name mariadb peppercode01/my_mariadb
 ```
 MariaDB 실행
 ```
@@ -116,11 +129,11 @@ exit
 ```
 
 ## Kafka
-Kafka Docker 저장소 클론
+1. Kafka Docker 저장소 클론
 ```
 git clone https://github.com/wurstmeister/kafka-docker
 ```
-docker-compose-single-broker.yml 수정
+2. docker-compose-single-broker.yml 수정
 ```yml
 version: '2'
 services:
@@ -153,7 +166,7 @@ networks:
     name: ecommerce-network
     external: true
 ```
-Kafka 실행
+3. Kafka 실행
 ```
 docker-compose -f docker-compose-single-broker.yml up -d
 ```
@@ -165,11 +178,11 @@ docker run -d -p 9411:9411 --network ecommerce-network --name zipkin openzipkin/
 ```
 
 ## Monitoring
-Prometheus 실행
+1. Prometheus 실행
 ```
 docker run -d -p 9090:9090 --network ecommerce-network --name prometheus
 ```
-Files - etc/prometheus/prometheus.yml 파일 수정
+2. Files - etc/prometheus/prometheus.yml 파일 수정 후 재실행
 ```yml
 ...
 scrape_configs:
@@ -205,52 +218,68 @@ docker run -d -p 3000:3000 --network ecommerce-network --name grafana grafana/gr
 ```
 
 ## User Microservice
-gradle 버전 수정 후 Dockerfile 생성
+1. gradle 버전 수정 (1.0)
+2. gradle clean, gradle assemble
+3. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/user-service-1.0.jar UserService.jar
 ENTRYPOINT ["java", "-jar", "UserService.jar"]
 ```
-docker image 생성
+4. docker image 생성
 ```
 docker build -t peppercode01/user-service:1.0 .
 ```
-docker image 실행
+5. docker image 실행
 ```
 docker run -d --network ecommerce-network  --name user-service -e "spring.cloud.config.uri=http://config-service:8888" -e "spring.rabbitmq.host=rabbitmq" -e "spring.zipkin.base-url=http://zipkin:9411" -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" -e "logging.file=/api-logs/users-ws.log" peppercode01/user-service
 ```
 
 ## Order Microservice
-gradle 버전 수정 후 Dockerfile 생성
+1. gradle 버전 수정 (1.0)
+2. KafkaProducerConfig.producerFactory의 kafka 주소 변경
+```java
+//props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "172.18.0.101:9092");
+```
+3. gradle clean, gradle assemble
+4. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/order-service-1.0.jar OrderService.jar
 ENTRYPOINT ["java", "-jar", "OrderService.jar"]
 ```
-docker image 생성
+5. docker image 생성
 ```
 docker build -t peppercode01/order-service:1.0 .
 ```
-docker image 실행
+6. docker image 실행
 ```
 docker run -d --network ecommerce-network  --name order-service -e "spring.zipkin.base-url=http://zipkin:9411" -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/"  -e "spring.datasource.url=jdbc:mariadb://mariadb:3307/mydb" -e "logging.file=/api-logs/orders-ws.log" peppercode01/order-service
 ```
 
 ## Catalog Microservice
-gradle 버전 수정 후 Dockerfile 생성
+1. gradle 버전 수정 (1.0)
+2. KafkaProducerConfig.producerFactory의 kafka 주소 변경
+```java
+//props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "172.18.0.101:9092");
+```
+3. gradle clean, gradle assemble
+4. Dockerfile 생성
 ```
 FROM openjdk:17-ea-11-jdk-slim
 VOLUME /tmp
 COPY build/libs/catalog-service-1.0.jar CatalogService.jar
 ENTRYPOINT ["java", "-jar", "CatalogService.jar"]
 ```
-docker image 생성
+5. docker image 생성
 ```
 docker build -t peppercode01/catalog-service:1.0 .
 ```
-docker image 실행
+6. docker image 실행
 ```
 docker run -d --network ecommerce-network --name catalog-service -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" -e "logging.file=/api-logs/catalogs-ws.log" peppercode01/catalog-service
 ```
